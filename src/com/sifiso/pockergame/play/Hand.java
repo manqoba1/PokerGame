@@ -190,6 +190,7 @@ public class Hand {
     }
 
     public void displayResults() {
+        
         Card[] h = deck.getDeck();
         if (isRoyalFlush(h)) {
             System.out.println("Royal Flush");
