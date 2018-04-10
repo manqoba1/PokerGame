@@ -48,8 +48,7 @@ public class HandTest {
     public void testTwoPairDisplay() throws Exception {
         System.out.println("testTwoPairDisplay");
         cards = HelperUtils.readInputString("AS,10C,10H,3D,3S");
-        Deck d = new Deck(cards);
-        Hand instance = new Hand(d);
+        Hand instance = new Hand(cards);
         instance.displayResults();
         // TODO review the generated test code and remove the default call to fail.
 //        assertThat(instance, Is.is(cards));
@@ -59,8 +58,7 @@ public class HandTest {
     public void testForOfAKindDisplay() throws Exception {
         System.out.println("testFlushDisplay");
         cards = HelperUtils.readInputString("AS,10C,AH,AD,AS");
-        Deck d = new Deck(cards);
-        Hand instance = new Hand(d);
+        Hand instance = new Hand(cards);
         instance.displayResults();
     }
 

@@ -13,10 +13,10 @@ import com.sifiso.pockergame.model.Card;
  */
 public class Hand {
 
-    private Deck deck;
+    private Card[] decks;
 
-    public Hand(Deck deck) {
-        this.deck = deck;
+    public Hand(Card[] decks) {
+        this.decks = decks;
     }
 
     private boolean isRoyalFlush(Card[] h) {
@@ -190,8 +190,8 @@ public class Hand {
     }
 
     public void displayResults() {
-        
-        Card[] h = deck.getDeck();
+
+        Card[] h = decks;
         if (isRoyalFlush(h)) {
             System.out.println("Royal Flush");
         } else if (isStraightFlush(h)) {

@@ -6,7 +6,6 @@
 package com.sifiso.pockergame.test;
 
 import com.sifiso.pockergame.model.Card;
-import com.sifiso.pockergame.play.Deck;
 import com.sifiso.pockergame.play.Hand;
 import com.sifiso.pockergame.utils.HelperUtils;
 import java.util.Scanner;
@@ -29,8 +28,7 @@ public class PokerGame {
 
 //        Card[] cards = Utils.readInputString("AS,10C,10H,3D,4S");
         Card[] cards = HelperUtils.readInputString(text);
-        Deck d = new Deck(cards);
-        Hand h = new Hand(d);
+        Hand h = new Hand(cards);
 
         h.displayResults();
     }
