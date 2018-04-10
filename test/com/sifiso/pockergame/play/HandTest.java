@@ -6,14 +6,12 @@
 package com.sifiso.pockergame.play;
 
 import com.sifiso.pockergame.model.Card;
-import com.sifiso.pockergame.utils.Utils;
-import org.hamcrest.core.Is;
+import com.sifiso.pockergame.utils.HelperUtils;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-import static org.junit.Assert.*;
 
 /**
  *
@@ -47,9 +45,9 @@ public class HandTest {
      * Test of display method, of class Hand.
      */
     @Test
-    public void testTwoPairDisplay() {
+    public void testTwoPairDisplay() throws Exception {
         System.out.println("testTwoPairDisplay");
-        cards = Utils.readInputString("AS,10C,10H,3D,3S");
+        cards = HelperUtils.readInputString("AS,10C,10H,3D,3S");
         Deck d = new Deck(cards);
         Hand instance = new Hand(d);
         instance.displayResults();
@@ -58,9 +56,9 @@ public class HandTest {
     }
 
     @Test
-    public void testForOfAKindDisplay() {
+    public void testForOfAKindDisplay() throws Exception {
         System.out.println("testFlushDisplay");
-        cards = Utils.readInputString("AS,10C,AH,AD,AS");
+        cards = HelperUtils.readInputString("AS,10C,AH,AD,AS");
         Deck d = new Deck(cards);
         Hand instance = new Hand(d);
         instance.displayResults();

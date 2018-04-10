@@ -6,9 +6,6 @@
 package com.sifiso.pockergame.play;
 
 import com.sifiso.pockergame.model.Card;
-import com.sifiso.pockergame.utils.Utils;
-import java.util.ArrayList;
-import java.util.Random;
 
 /**
  *

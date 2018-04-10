@@ -11,7 +11,7 @@ import com.sifiso.pockergame.model.Card;
  *
  * @author sifiso.mtshweni
  */
-public class Utils {
+public class HelperUtils {
 
     public static Card[] readInputString(String input) throws Exception {
 

@@ -8,14 +8,14 @@ package com.sifiso.pockergame.test;
 import com.sifiso.pockergame.model.Card;
 import com.sifiso.pockergame.play.Deck;
 import com.sifiso.pockergame.play.Hand;
-import com.sifiso.pockergame.utils.Utils;
+import com.sifiso.pockergame.utils.HelperUtils;
 import java.util.Scanner;
 
 /**
  *
  * @author sifiso.mtshweni
  */
-public class PockerGame {
+public class PokerGame {
 
     /**
      * @param args the command line arguments
@@ -28,7 +28,7 @@ public class PockerGame {
         String text = scanner.nextLine();
 
 //        Card[] cards = Utils.readInputString("AS,10C,10H,3D,4S");
-        Card[] cards = Utils.readInputString(text);
+        Card[] cards = HelperUtils.readInputString(text);
         Deck d = new Deck(cards);
         Hand h = new Hand(d);
 
